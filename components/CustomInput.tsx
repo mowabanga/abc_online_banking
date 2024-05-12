@@ -1,6 +1,7 @@
 import React from "react";
 import { FormControl, FormField, FormLabel, FormMessage } from "./ui/form";
 import { Input } from "./ui/input";
+
 import { Control, FieldPath } from "react-hook-form";
 import { z } from "zod";
 import { authFormSchema } from "@/lib/utils";
@@ -26,8 +27,8 @@ const CustomInput = ({ control, name, label, placeholder }: CustomInput) => {
             <FormControl>
               <Input
                 placeholder={placeholder}
-                type={name === "password" ? "password" : "text"}
                 className="input-class"
+                type={name === "password" ? "password" : "text"}
                 {...field}
               />
             </FormControl>

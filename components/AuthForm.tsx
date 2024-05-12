@@ -118,20 +118,20 @@ const AuthForm = ({ type }: { type: string }) => {
                       control={form.control}
                       name="firstName"
                       label="First Name"
-                      placeholder="Enter your first name"
+                      placeholder="John"
                     />
                     <CustomInput
                       control={form.control}
                       name="lastName"
                       label="Last Name"
-                      placeholder="Enter your first name"
+                      placeholder="Doe"
                     />
                   </div>
                   <CustomInput
                     control={form.control}
                     name="address1"
                     label="Address"
-                    placeholder="Enter your specific address"
+                    placeholder="Enter your address"
                   />
                   <CustomInput
                     control={form.control}
@@ -143,13 +143,13 @@ const AuthForm = ({ type }: { type: string }) => {
                     <CustomInput
                       control={form.control}
                       name="state"
-                      label="State"
+                      label="State (2 Characters)"
                       placeholder="Example: NY"
                     />
                     <CustomInput
                       control={form.control}
                       name="postalCode"
-                      label="Postal Code"
+                      label="Postal Code (5 characters)"
                       placeholder="Example: 11101"
                     />
                   </div>
@@ -163,7 +163,7 @@ const AuthForm = ({ type }: { type: string }) => {
                     <CustomInput
                       control={form.control}
                       name="ssn"
-                      label="SSN"
+                      label="SSN (Last 4 digits)"
                       placeholder="Example: 1234"
                     />
                   </div>
